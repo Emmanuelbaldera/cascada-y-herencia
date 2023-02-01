@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cascada y herencia</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<h1>Cascada y herencia</h1>
+		<p>El objetivo de este artículo es desarrollar la comprensión de algunos de los conceptos fundamentales de CSS (cascada, especificidad y herencia) que controlan cómo se aplica el CSS al HTML y cómo se resuelven los conflictos.</p>
+		<div>
+			<p>A medida que avances en este apartado verás que puede resultar menos relevante y un poco más académico que otros artículos, pero la comprensión de estas cuestiones te ahorrará problemas más adelante. Te animamos a que trabajes meticulosamente este apartado y verifiques que entiendes los conceptos antes de continuar.</p>
+		</div>
+		<h2>Cascada</h2>
+		<p class="destacado">En un primer nivel de simplicidad, la cascada en las hojas de estilo significa que el orden de las reglas importa en CSS: cuando dos reglas tienen la misma especificidad, se aplica la que aparece en último lugar en el CSS.
+		<br><br>
+		En el ejemplo siguiente tenemos dos reglas que pueden aplicarse al h1. El h1 acaba siendo de color azul porque estas normas tienen un selector idéntico y, por lo tanto, tienen la misma especificidad. Por esta razón, se aplica la última que aparece.</p>
+
+		<img src="cascada.png">
+		<div>
+			<h2>Herencia</h2>
+			<p>La herencia también debe entenderse en este contexto: algunos valores de las propiedades CSS que se han establecido para los elementos padre los heredan los elementos hijo, pero otros no.
+				<br><br>
+			Por ejemplo, si para un elemento se establece el color (color) y el tipo de letra (font-family), cada elemento que se encuentre dentro de él también se mostrará de ese color y con ese tipo de letra, a menos que les se haya aplicado un color y un tipo de letra diferentes directamente.</p>
+			<img src="herencia.png">
+		</div>
+	</section>
+	<footer id="pie-de-pagina">Copyright © 2023 MDN devoloper®</footer>
+</body>
+</html>

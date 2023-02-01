@@ -1,0 +1,41 @@
+*{
+	font-family: 'Time New Roman';
+}
+
+body{
+	background: #ECE5D7;
+}
+
+h1{
+	color: blue;
+	font-size: 45px;
+}
+h2{
+	color: green;
+	font-size: 35px;
+}
+p{
+	color: red;
+	font-size: 20px;
+}
+
+.destacado{
+	background: #B87719;
+	color: white;
+	font-family:'Roboto'!important;
+}
+
+div p{
+	color: black;
+
+}
+
+#pie-de-pagina{
+	font-size: 20px;
+	text-align: center!important;
+	font-family: 'Arial Black';
+}
+
+img{
+	margin-left: 25px;
+}
